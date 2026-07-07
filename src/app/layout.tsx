@@ -3,6 +3,7 @@ import { Fraunces, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { profile } from "@/content/profile";
 import { CommandMenu } from "@/components/CommandMenu";
+import { CustomCursor } from "@/components/CustomCursor";
 import { NowPlayingBar } from "@/components/NowPlayingBar";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -71,6 +72,7 @@ export default function RootLayout({
           Skip to content
         </a>
         {children}
+        <CustomCursor />
         <CommandMenu />
         <NowPlayingBar />
         <Analytics />
