@@ -18,7 +18,7 @@ const NAV = [
   { id: "experience", label: "Experience", hint: "where I've worked" },
   { id: "about", label: "About", hint: "who I am" },
   { id: "research", label: "Research", hint: "my ML work" },
-  { id: "contact", label: "Contact", hint: "get in touch" },
+  { id: "contact", label: "Learn More", hint: "email & socials" },
 ];
 
 export function CommandMenu() {

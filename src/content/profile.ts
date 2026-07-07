@@ -117,32 +117,6 @@ export const profile = {
       url: "https://codewithpurpose.org",
       note: "Co-founded the largest tech-focused nonprofit in California — teaching 5,000+ students across 130 countries how to build with AI, with leading YC and Fortune 500 companies as partners.",
     },
-    {
-      org: "HackMind",
-      role: "Co-Founder",
-      period: "Apr 2026 — Present",
-      note: "Co-founding a startup with 100+ users on an invite-only waitlist and 500+ people pitched at hackathons. Building the next generation of web-based product development on top of Garry Tan's GSTACK.",
-    },
-    {
-      org: "YC-Backed Startups",
-      role: "Engineering Intern",
-      period: "Apr 2026 — Present",
-      note: "Two YC companies reached out to bring me on. For one, I built their internal growth engine — a tool that drives growth on X through custom algorithms and outbound, automatically detecting when anyone discusses email-related topics and generating a tailored strategy and action plan in real time. For the other I was the first hire, building custom data pipelines to label and annotate training data at scale.",
-    },
-    {
-      org: "EduFund",
-      role: "Lead AI/ML Engineering Intern",
-      period: "Jul 2025 — Nov 2025",
-      url: "https://edufund.in",
-      note: "Helped lead a $6M raise at a $70M valuation while directing a team of 7 on an AI financial tool addressing H-1B visa challenges affecting 2M+ people.",
-    },
-    {
-      org: "Nexuify",
-      role: "Founder",
-      period: "Oct 2024 — Nov 2025",
-      url: "https://beta.nexuify.com",
-      note: "Built an AI application layer that let AI agents operate on top of LinkedIn. Acquired (mid four figures).",
-    },
   ] satisfies Experience[],
 
   /* --- Research (ML work) ------------------------------------------------- */
@@ -168,9 +142,12 @@ export const profile = {
   /* --- Contact + socials -------------------------------------------------- */
   email: "samanyu.goyal2010@gmail.com",
   socials: [
-    { label: "GitHub", value: "@yourhandle", href: "https://github.com/yourhandle" }, // TODO
-    { label: "X", value: "@yourhandle", href: "https://x.com/yourhandle" }, // TODO
-    { label: "LinkedIn", value: "in/you", href: "https://linkedin.com/in/you" }, // TODO
+    { label: "X", value: "@samanyugoyal", href: "https://x.com/samanyugoyal" },
+    {
+      label: "LinkedIn",
+      value: "in/samanyu-goyal",
+      href: "https://www.linkedin.com/in/samanyu-goyal/",
+    },
   ] satisfies Social[],
 
   /* --- SEO / meta --------------------------------------------------------- */
@@ -178,11 +155,13 @@ export const profile = {
   metaDescription:
     "Samanyu — a high-school builder shipping real things in AI and on the web.", // TODO
   keywords: ["Samanyu", "builder", "AI", "developer", "portfolio"], // TODO
-  twitterHandle: "@yourhandle", // TODO
+  twitterHandle: "@samanyugoyal",
 
   /* --- Integrations (optional; see README for setup) ---------------------- */
   /** Your GitHub username — powers the live contribution graph. */
   githubUsername: "", // TODO e.g. "samanyu"
+  /** Your Last.fm username — powers the now-playing bar and status line. */
+  lastfmUsername: "samanyugoyal",
 } as const;
 
 export type Profile = typeof profile;

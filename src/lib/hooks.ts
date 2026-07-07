@@ -2,7 +2,7 @@
 
 import useSWR from "swr";
 import { useEffect, useState } from "react";
-import type { NowPlaying } from "@/lib/spotify";
+import type { NowPlaying } from "@/lib/lastfm";
 import type { GitHubData } from "@/lib/github";
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json());

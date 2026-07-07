@@ -59,12 +59,12 @@ function CopyEmail() {
 
 export function Contact() {
   return (
-    <Section id="contact" index="04" title="Contact">
+    <Section id="contact" index="04" title="Learn More">
       <div className="space-y-8">
         <Reveal>
           <p className="mb-5 max-w-xl text-lg text-muted">
-            Building something interesting, hiring, or just want to talk? My inbox
-            is open.
+            Want to know more about what I&apos;m building, where I&apos;ve been,
+            or what I&apos;m into next? Email me directly — my inbox is open.
           </p>
           <CopyEmail />
         </Reveal>

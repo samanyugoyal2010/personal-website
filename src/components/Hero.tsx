@@ -4,7 +4,7 @@ import { StatusLine } from "@/components/StatusLine";
 
 export function Hero() {
   return (
-    <section className="flex min-h-[78vh] flex-col justify-center py-10">
+    <section className="flex min-h-[78vh] flex-col justify-end pt-10 pb-10 sm:pt-14">
       <p className="label mb-5 text-accent">{profile.role}</p>
 
       <Masthead name={profile.name} />

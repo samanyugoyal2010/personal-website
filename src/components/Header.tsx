@@ -4,7 +4,7 @@ const links = [
   { id: "experience", label: "Experience" },
   { id: "about", label: "About" },
   { id: "research", label: "Research" },
-  { id: "contact", label: "Contact" },
+  { id: "contact", label: "Learn More" },
 ];
 
 export function Header() {
