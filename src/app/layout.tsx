@@ -4,6 +4,7 @@ import "./globals.css";
 import { profile } from "@/content/profile";
 import { CommandMenu } from "@/components/CommandMenu";
 import { NowPlayingBar } from "@/components/NowPlayingBar";
+import { Analytics } from "@vercel/analytics/next";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -72,6 +73,7 @@ export default function RootLayout({
         {children}
         <CommandMenu />
         <NowPlayingBar />
+        <Analytics />
       </body>
     </html>
   );
