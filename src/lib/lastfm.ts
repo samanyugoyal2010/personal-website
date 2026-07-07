@@ -45,19 +45,25 @@ function pickImage(images?: LastFmImage[]) {
   );
 }
 
+function spotifySearchUrl(title: string, artist?: string) {
+  const query = artist ? `${title} ${artist}` : title;
+  return `https://open.spotify.com/search/${encodeURIComponent(query)}`;
+}
+
 function normalizeTrack(
   track: LastFmTrack | undefined,
 ): NowPlaying | null {
   if (!track?.name) return null;
+  const artist = track.artist?.["#text"];
   const isPlaying = track["@attr"]?.nowplaying === "true";
   return {
     isPlaying,
     isRecent: !isPlaying,
     title: track.name,
-    artist: track.artist?.["#text"],
+    artist,
     album: track.album?.["#text"],
     albumImage: pickImage(track.image),
-    songUrl: track.url,
+    songUrl: spotifySearchUrl(track.name, artist),
   };
 }
 
